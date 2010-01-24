@@ -1,0 +1,8 @@
+
+" trick for lookup selected keyword in the dictionary
+
+:command! dict -nargs=* tabopen http://www.m-w.com/cgi-bin/dictionary?book=Dictionary&va=<args>
+:command! lingvo -nargs=* tabopen http://lingvo.yandex.ru/en?text=<args>
+
+:map <leader>d :exe ":dict "+content.getSelection()<CR>
+:map <leader>l :exe ":lingvo "+content.getSelection()<CR>

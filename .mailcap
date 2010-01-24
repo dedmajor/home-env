@@ -1,0 +1,27 @@
+image/*; ~/bin/mutt_bgrun gwenview '%s'; test=test -n "$DISPLAY"
+image/*;  (anytopnm %s | pnmscale -xysize 80 46 | ppmtopgm | pgmtopbm | pbmtoascii -1x2 ) 2>&1 ; copiousoutput
+
+application/msword; ~/bin/mutt_bgrun oowriter '%s'; test=test -n "$DISPLAY"
+application/vnd.oasis.opendocument.spreadsheet; ~/bin/mutt_bgrun oowriter '%s'; test=test -n "$DISPLAY"
+
+application/vnd.ms-word; ~/bin/mutt_bgrun oowriter '%s'; test=test -n "$DISPLAY"
+application/vnd.ms-excel; ~/bin/mutt_bgrun oocalc '%s'; test=test -n "$DISPLAY"
+application/vnd.ms-powerpoint; ~/bin/mutt_bgrun ooimpress '%s'; test=test -n "$DISPLAY"
+
+application/x-pdf; ~/bin/mutt_bgrun okular '%s'; test=test -n "$DISPLAY"
+application/pdf; ~/bin/mutt_bgrun okular '%s'; test=test -n "$DISPLAY"
+application/x-pdf; pdftotext -layout /dev/stdin -; copiousoutput
+application/pdf; pdftotext -layout /dev/stdin -; copiousoutput
+
+text/x-diff; vimpager -;
+
+application/zip; vim %s; nametemplate=%s.zip
+application/x-zip-compressed; vim %s; nametemplate=%s.zip
+
+application/rar; ~/bin/mutt_bgrun ark %s; nametemplate=%s.rar; test=test -n "$DISPLAY"
+application/x-rar-compressed; ~/bin/mutt_bgrun ark %s; nametemplate=%s.rar; test=test -n "$DISPLAY"
+
+
+text/html; lynx -assume_charset %{charset} -display_charset UTF8 -dump %s; copiousoutput; nametemplate=%s.html
+
+text/calendar; mutt_calendar %s %{charset} | less

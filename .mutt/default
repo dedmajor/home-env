@@ -1,0 +1,88 @@
+
+set include
+set edit_headers
+set askcc
+
+# really annoying
+unset mark_old
+
+ignore *
+unignore From Date To Cc Subject
+hdr_order From Date To Cc Subject
+
+set forw_format="Fwd: %s"
+set mime_forward
+set mime_forward_rest
+
+set certificate_file="~/.mutt/certificates"
+
+set ssl_starttls=yes
+set ssl_force_tls=yes
+
+source ~/.mutt/pgp
+
+unset imap_passive
+#set imap_check_subscribed
+
+# no often mail checking
+set mail_check=3600
+set imap_keepalive=300
+# annoying
+set sleep_time=0
+
+
+set header_cache=~/.cache-mutt/headers
+set message_cachedir=~/.cache-mutt/bodies
+
+
+bind index		^		imap-fetch-mail
+bind browser	^		check-new
+
+source ~/.mutt/macro
+
+set alias_file="~/.mutt/aliases"
+source ~/.mutt/aliases
+
+source ~/.mutt/subscribe
+
+set fast_reply
+set recall=no
+
+set copy=yes
+set record="="
+set postponed="=Drafts"
+#set trash="=Trash"
+
+unset confirmappend
+
+
+set sort=threads
+set index_format='%Z %{%b %D %H:%M}  %-26.26F %s'
+set status_chars="-*XA"
+set status_format="[%r|%f|%b] #%M/%m=%L/%l [%nN %dD %tT] (%s.%S) %V %> (%P)"
+#set date_format="%d%m%y-%H:%M"
+
+# useful with window$ clients
+set rfc2047_parameters
+
+set thorough_search
+
+set pager="vimpager"
+message-hook '*' 'set pager="vimpager"'
+message-hook '~s Crucible' 'set pager="~/bin/crucPager.sh"'
+
+# (http://www.escape.de/users/tolot/mutt/).
+set display_filter='t-prot -acelmtS -Mmutt --spass -L$HOME/.mutt/mlfooters -A$HOME/.mutt/adfooters'
+
+# toggle TOFU protection with ESC-0 and ESC-1
+macro generic \e0 ":unset display_filter\n" "Turn TOFU protection off"
+macro generic \e1 ":set display_filter='t-prot -acelmtS -Mmutt --spass -L$HOME/.mutt/mlfooters -A$HOME/.mutt/adfooters'\n" "Turn TOFU protection on"
+
+set quit=no
+
+set print_command="muttprint"
+
+auto_view text/html application/x-httpd-php application/x-pdf application/pdf image/*
+
+set save_history=2000
+set history=2000

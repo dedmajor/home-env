@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application>
+  <component name="AppserversManager">
+    <LibraryTable>
+      <library name="Tomcat 6">
+        <CLASSES>
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/tomcat-coyote.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/mail.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/catalina-ha.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/jdbc-postgresql.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/jdbc-mysql.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/jasper-el.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/jsp-api.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/catalina-ant.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/tomcat-i18n-ja.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/jasper.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/tomcat-i18n-fr.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/tomcat-i18n-es.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/annotations-api.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/tomcat-dbcp.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/el-api.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/catalina.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/commons-pool.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/servlet-api.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/commons-dbcp.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/catalina-tribes.jar!/" />
+          <root url="jar:///opt/apache-tomcat-6.0.20/lib/jasper-jdt.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </LibraryTable>
+    <ServerDK NAME="Tomcat 6">
+      <option name="SOURCE_INTEGRATION_NAME" value="Tomcat Server" />
+      <DATA>
+        <option name="CATALINA_HOME" value="/opt/apache-tomcat-6.0.20" />
+        <option name="CATALINA_BASE" value="" />
+        <option name="VERSION" value="6.0" />
+      </DATA>
+    </ServerDK>
+  </component>
+  <component name="CodeStyleSchemes">
+    <option name="CURRENT_SCHEME_NAME" value="Default" />
+  </component>
+  <component name="CodeStyleSettingsManager">
+    <option name="PER_PROJECT_SETTINGS" />
+    <option name="USE_PER_PROJECT_SETTINGS" value="false" />
+  </component>
+  <component name="DebuggerSettings">
+    <option name="TRACING_FILTERS_ENABLED" value="true" />
+    <option name="VALUE_LOOKUP_DELAY" value="700" />
+    <option name="DEBUGGER_TRANSPORT" value="0" />
+    <option name="FORCE_CLASSIC_VM" value="true" />
+    <option name="DISABLE_JIT" value="false" />
+    <option name="HIDE_DEBUGGER_ON_PROCESS_TERMINATION" value="false" />
+    <option name="HOTSWAP_IN_BACKGROUND" value="true" />
+    <option name="SKIP_SYNTHETIC_METHODS" value="true" />
+    <option name="SKIP_CONSTRUCTORS" value="false" />
+    <option name="SKIP_GETTERS" value="false" />
+    <option name="SKIP_CLASSLOADERS" value="true" />
+    <option name="EVALUATION_DIALOG_TYPE" />
+    <option name="RUN_HOTSWAP_AFTER_COMPILE" value="RunHotswapAsk" />
+    <option name="COMPILE_BEFORE_HOTSWAP" value="true" />
+    <option name="WATCH_RETURN_VALUES" value="false" />
+    <option name="AUTO_VARIABLES_MODE" value="false" />
+    <filter>
+      <option name="PATTERN" value="com.sun.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="java.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="javax.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="org.omg.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="sun.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+    <filter>
+      <option name="PATTERN" value="junit.*" />
+      <option name="ENABLED" value="true" />
+    </filter>
+  </component>
+  <component name="FindSettings">
+    <option name="SEARCH_OVERLOADED_METHODS" value="false" />
+    <option name="SEARCH_IN_LIBRARIES" value="false" />
+    <option name="SEARCH_FOR_TEXT_OCCURENCES" value="true" />
+    <option name="SKIP_RESULTS_WHEN_ONE_USAGE" value="false" />
+    <option name="FIND_DIRECTION" value="forward" />
+    <option name="FIND_ORIGIN" value="from_cursor" />
+    <option name="FIND_SCOPE" value="global" />
+    <option name="FIND_CUSTOM_SCOPE" />
+    <option name="CASE_SENSITIVE_SEARCH" value="false" />
+    <option name="LOCAL_CASE_SENSITIVE_SEARCH" value="false" />
+    <option name="PRESERVE_CASE_REPLACE" value="false" />
+    <option name="WHOLE_WORDS_ONLY" value="false" />
+    <option name="LOCAL_WHOLE_WORDS_ONLY" value="false" />
+    <option name="REGULAR_EXPRESSIONS" value="false" />
+    <option name="WITH_SUBDIRECTORIES" value="true" />
+    <option name="SEARCH_SCOPE" value="All Project Classes" />
+    <option name="FILE_MASK" />
+    <option name="RECENT_FIND_STRINGS">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="RECENT_REPLACE_STRINGS">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="RECENT_DIR_STRINGS">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="RECENT_FILE_MASKS">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+  </component>
+  <component name="GlobalAntConfiguration">
+    <filtersTableLayout />
+    <propertiesTableLayout />
+    <registeredAnts />
+  </component>
+  <component name="HttpConfigurable">
+    <option name="USE_HTTP_PROXY" value="false" />
+    <option name="PROXY_HOST" value="" />
+    <option name="PROXY_PORT" value="80" />
+    <option name="PROXY_AUTHENTICATION" value="false" />
+    <option name="PROXY_LOGIN" value="" />
+    <option name="PROXY_PASSWORD_CRYPT" value="" />
+    <option name="KEEP_PROXY_PASSWORD" value="false" />
+  </component>
+  <component name="InspectionProfileManager">
+    <list size="0" />
+  </component>
+  <component name="PluginManagerConfigurable" proportions="" version="1">
+    <option name="AVAILABLE_SORT_COLUMN" value="0" />
+    <option name="INSTALLED_SORT_COLUMN" value="0" />
+    <option name="CART_SORT_COLUMN" value="0" />
+    <option name="AVAILABLE_SORT_COLUMN_ORDER" value="1" />
+    <option name="INSTALLED_SORT_COLUMN_ORDER" value="1" />
+    <option name="CART_SORT_COLUMN_ORDER" value="1" />
+    <available>
+      <option name="myProportion" />
+    </available>
+    <installed>
+      <option name="myProportion" />
+    </installed>
+  </component>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="/home/dedmajor/svn/visor/trunk" />
+      </list>
+    </option>
+    <option name="lastPath" value="/home/dedmajor/svn/visor/trunk" />
+  </component>
+  <component name="TemplateSettings">
+    <defaultShortcut shortcut="TAB" />
+  </component>
+  <component name="TodoConfiguration">
+    <pattern icon="default" case-sensitive="false" pattern="\btodo\b.*">
+      <option name="FOREGROUND" value="ff" />
+      <option name="BACKGROUND" />
+      <option name="FONT_TYPE" value="3" />
+      <option name="EFFECT_COLOR" />
+      <option name="EFFECT_TYPE" value="-1" />
+      <option name="ERROR_STRIPE_COLOR" value="ff" />
+    </pattern>
+  </component>
+  <component name="UpdatesConfigurable">
+    <option name="myPluginHosts">
+      <value>
+        <list size="0" />
+      </value>
+    </option>
+    <option name="CHECK_NEEDED" value="true" />
+    <option name="CHECK_PERIOD" value="Weekly" />
+    <option name="LAST_TIME_CHECKED" value="1263548334360" />
+  </component>
+  <component name="com.intellij.ide.fileTemplates.impl.FileTemplateManagerImpl">
+    <deleted_templates>
+      <option name="DELETED_DEFAULT_TEMPLATES">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
+    </deleted_templates>
+    <deleted_includes>
+      <option name="DELETED_DEFAULT_TEMPLATES">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
+    </deleted_includes>
+    <recent_templates>
+      <option name="RECENT_TEMPLATES">
+        <value>
+          <list size="0" />
+        </value>
+      </option>
+    </recent_templates>
+    <templates>
+      <internal_template name="Class" reformat="true" />
+      <internal_template name="Interface" reformat="true" />
+      <internal_template name="Enum" reformat="true" />
+      <internal_template name="AnnotationType" reformat="true" />
+      <internal_template name="Html" reformat="true" />
+      <internal_template name="Xhtml" reformat="true" />
+      <template name="ActionScript Class" reformat="true" />
+      <template name="ActionScript Interface" reformat="true" />
+      <template name="MobileResourceBundle" reformat="true" />
+      <template name="Mxml Component" reformat="true" />
+      <template name="Mxml Component for Flex 4 (Gumbo)" reformat="true" />
+      <template name="Singleton" reformat="true" />
+    </templates>
+  </component>
+  <component name="com.intellij.openapi.diff.impl.external.DiffManagerImpl">
+    <enableFiles value="false" />
+    <enableFolders value="false" />
+    <filesTool value="" newValue="" />
+    <foldersTool value="" newValue="" />
+  </component>
+</application>
+

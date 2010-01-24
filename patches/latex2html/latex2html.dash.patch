@@ -1,0 +1,11 @@
+--- /tmp/latex2html.pl	2009-08-12 13:30:10.000000000 +0400
++++ /usr/lib64/latex2html/latex2html.pl	2009-08-13 10:09:01.000000000 +0400
+@@ -7423,6 +7423,8 @@
+ 	    print STDOUT "\n *** post-post-process *** " if ($VERBOSITY > 1);
+ 	    &post_post_process if (defined &post_post_process);
+ 	    &adjust_encoding;
++	    ## FIXME: by dedmajor: find a proper place:
++	    s/--/&#8212;/gs;
+ 	    print OUTFILE $_;
+ 	    print OUTFILE &make_address;
+ 	    close OUTFILE;

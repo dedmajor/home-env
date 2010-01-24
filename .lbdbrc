@@ -1,0 +1,3 @@
+METHODS="m_muttalias m_ldap"
+MUTT_DIRECTORY="$HOME/.mutt"
+MUTTALIAS_FILES="aliases"

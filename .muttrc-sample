@@ -1,0 +1,25 @@
+set realname="John Doe"
+set from="john@example.com"
+set use_from=yes
+set hostname="example.com"
+
+my_hdr Organization: Example Corp.
+
+set spoolfile=`cat ~/.auth | grep ^mail | cut -d ' ' -f 4`
+set imap_pass=`cat ~/.auth | grep ^mail | cut -d ' ' -f 3`
+set folder="$spoolfile"
+
+account-hook 'imaps://user@imap.gmail.com/' 'set imap_pass=""'
+
+source ~/.mutt/default
+
+mailboxes =
+
+set pgp_sign_as=0x00000000
+
+folder-hook . set pgp_autosign=no
+folder-hook =onphp set pgp_autosign=yes
+
+set query_command="lbdbq '%s'"
+
+source ~/.mutt/colors-bulix

@@ -1,0 +1,8 @@
+macro index     S "s=Spam<enter>" \
+	"Mark as spam"
+
+macro index     G "C=ham<enter>wO" \
+	"Mark as ham"
+
+macro index \Cr "<tag-pattern>~N\n<tag-prefix><clear-flag>N" \
+	"Mark all new messages as read"

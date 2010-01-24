@@ -1,0 +1,7 @@
+PRINT_COMMAND="lpr"
+PENGUIN="off"
+TEX_FONTENC="T2A"
+FONTSIZE="11pt"
+PAPERSAVE="off"
+DEBUG="off"
+

@@ -1,0 +1,6 @@
+189a190,194
+> 
+>   $ldap->start_tls(
+> 	verify => 'none'
+>   );
+> 

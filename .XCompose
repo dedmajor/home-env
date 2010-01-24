@@ -1,0 +1,72 @@
+# /usr/share/X11/locale/en_US.UTF-8/Compose
+
+<Multi_key> <o> <c>              	: "©"   copyright # COPYRIGHT SIGN
+<Multi_key> <o> <C>              	: "©"   copyright # COPYRIGHT SIGN
+<Multi_key> <O> <c>              	: "©"   copyright # COPYRIGHT SIGN
+<Multi_key> <O> <C>              	: "©"   copyright # COPYRIGHT SIGN
+
+<Multi_key> <o> <r>              	: "®"   registered # REGISTERED SIGN
+<Multi_key> <o> <R>              	: "®"   registered # REGISTERED SIGN
+<Multi_key> <O> <r>              	: "®"   registered # REGISTERED SIGN
+<Multi_key> <O> <R>              	: "®"   registered # REGISTERED SIGN
+
+<dead_circumflex> <Multi_key> <T> <M> 	: "™"   U2122 # TRADE MARK SIGN
+<Multi_key> <T> <M>		 	: "™"   U2122 # TRADE MARK SIGN
+<dead_circumflex> <Multi_key> <t> <M> 	: "™"   U2122 # TRADE MARK SIGN
+<Multi_key> <t> <M>		 	: "™"   U2122 # TRADE MARK SIGN
+<dead_circumflex> <Multi_key> <T> <m> 	: "™"   U2122 # TRADE MARK SIGN
+<Multi_key> <T> <m>		 	: "™"   U2122 # TRADE MARK SIGN
+<dead_circumflex> <Multi_key> <t> <m> 	: "™"   U2122 # TRADE MARK SIGN
+<Multi_key> <t> <m>		 	: "™"   U2122 # TRADE MARK SIGN
+
+<Multi_key> <plus> <minus>       	: "±"   plusminus # PLUS-MINUS SIGN
+
+<Multi_key> <less> <less>        	: "«"   guillemotleft # LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+<Multi_key> <greater> <greater>  	: "»"   guillemotright # RIGHT-POINTING DOUBLE ANGLE QUOTATION MARK
+<Multi_key> <Cyrillic_BE> <Cyrillic_BE>    	: "«"
+<Multi_key> <Cyrillic_YU> <Cyrillic_YU>  	: "»"
+
+<Multi_key> <comma> <quotedbl>   	: "„"   U201e # DOUBLE LOW-9 QUOTATION MARK
+<Multi_key> <quotedbl> <comma>   	: "„"   U201e # DOUBLE LOW-9 QUOTATION MARK
+
+<Multi_key> <less> <quotedbl>    	: "“"   U201c # LEFT DOUBLE QUOTATION MARK
+<Multi_key> <quotedbl> <less>    	: "“"   U201c # LEFT DOUBLE QUOTATION MARK
+
+<Multi_key> <minus> <minus> <period> 	: "–"   U2013 # EN DASH
+<Multi_key> <minus> <minus> <minus> 	: "—"   U2014 # EM DASH
+
+<Multi_key> <C> <equal>          	: "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <C>          	: "€"   EuroSign # EURO SIGN
+<Multi_key> <c> <equal>          	: "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <c>          	: "€"   EuroSign # EURO SIGN
+<Multi_key> <E> <equal>          	: "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <E>          	: "€"   EuroSign # EURO SIGN
+<Multi_key> <e> <equal>          	: "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <e>          	: "€"   EuroSign # EURO SIGN
+<Multi_key> <Cyrillic_ES> <equal>	: "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <Cyrillic_ES>	: "€"   EuroSign # EURO SIGN
+<Multi_key> <Cyrillic_IE> <equal>	: "€"   EuroSign # EURO SIGN
+<Multi_key> <equal> <Cyrillic_IE>	: "€"   EuroSign # EURO SIGN
+
+<Multi_key> <bar> <c>            	: "¢"   cent # CENT SIGN
+<Multi_key> <c> <bar>            	: "¢"   cent # CENT SIGN
+<Multi_key> <c> <slash>          	: "¢"   cent # CENT SIGN
+<Multi_key> <slash> <c>          	: "¢"   cent # CENT SIGN
+<Multi_key> <L> <minus>          	: "£"   sterling # POUND SIGN
+<Multi_key> <minus> <L>          	: "£"   sterling # POUND SIGN
+<Multi_key> <Y> <equal>          	: "¥"   yen # YEN SIGN
+<Multi_key> <equal> <Y>          	: "¥"   yen # YEN SIGN
+
+<Multi_key> <N> <o>			: "№" numerosign # NUMERO SIGN
+<Multi_key> <N> <O>			: "№" numerosign # NUMERO SIGN
+<Multi_key> <Cyrillic_EN> <Cyrillic_o>	: "№" numerosign # NUMERO SIGN
+<Multi_key> <Cyrillic_EN> <Cyrillic_O>	: "№" numerosign # NUMERO SIGN
+
+
+# my custom bindings
+
+<Multi_key> <minus> <less>			: "←"   U2190
+<Multi_key> <minus> <greater>		: "→"   U2192
+<Multi_key> <O> <x>					: "⊗"   U2297
+
+<Multi_key> <apostrophe> <apostrophe>	: "́"   U0301	# ACCENT (placed after letter)

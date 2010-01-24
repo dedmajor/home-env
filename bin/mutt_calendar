@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ "$2" != "" ]; then
+	CALENDAR=`mktemp`
+	iconv -f $2 $1 >$CALENDAR
+else
+	CALENDAR=$1
+fi
+
+#konsolekalendar --file $CALENDAR --view --all
+
+korganizer $CALENDAR &

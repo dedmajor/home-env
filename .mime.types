@@ -1,0 +1,6 @@
+application/x-bzip				bz2 tbz tbz2 tar.bz2
+application/x-7z-compressed		7z
+
+application/x-httpd-php			php
+
+application/vnd.ms-excel        xls xlb xlt xlsx

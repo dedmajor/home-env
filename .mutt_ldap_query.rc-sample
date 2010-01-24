@@ -1,0 +1,8 @@
+$ldap_server = 'mail.example.com';
+$search_base = 'ou=Users,ou=OxObjects,o=example,c=com';
+$ldap_result_email = '${uid}@example.com';
+$ldap_result_realname = '${cn}';
+$ldap_result_comment = '';
+$ignorant = 1;
+$ldap_bind_dn = 'uid=dedmajor,ou=Users,ou=OxObjects,o=example,c=com';
+$ldap_bind_password = "PASSWORD";
