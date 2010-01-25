@@ -8,8 +8,8 @@ application/vnd.ms-word; ~/bin/mutt_bgrun oowriter '%s'; test=test -n "$DISPLAY"
 application/vnd.ms-excel; ~/bin/mutt_bgrun oocalc '%s'; test=test -n "$DISPLAY"
 application/vnd.ms-powerpoint; ~/bin/mutt_bgrun ooimpress '%s'; test=test -n "$DISPLAY"
 
-application/x-pdf; ~/bin/mutt_bgrun okular '%s'; test=test -n "$DISPLAY"
-application/pdf; ~/bin/mutt_bgrun okular '%s'; test=test -n "$DISPLAY"
+application/x-pdf; ~/bin/mutt_bgrun evince '%s'; test=test -n "$DISPLAY"
+application/pdf; ~/bin/mutt_bgrun evince '%s'; test=test -n "$DISPLAY"
 application/x-pdf; pdftotext -layout /dev/stdin -; copiousoutput
 application/pdf; pdftotext -layout /dev/stdin -; copiousoutput
 
