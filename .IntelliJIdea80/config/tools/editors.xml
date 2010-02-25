@@ -3,7 +3,7 @@
   <tool name="gvim" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" synchronizeAfterRun="true">
     <exec>
       <option name="COMMAND" value="/usr/bin/gvim" />
-      <option name="PARAMETERS" value="--remote $FileRelativePath$" />
+      <option name="PARAMETERS" value="$FileRelativePath$ +$LineNumber$" />
       <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
     </exec>
   </tool>
