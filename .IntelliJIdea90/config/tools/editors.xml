@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolSet name="editors">
+  <tool name="gvim" showInMainMenu="true" showInEditor="true" showInProject="true" showInSearchPopup="true" disabled="false" useConsole="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="/usr/bin/gvim" />
+      <option name="PARAMETERS" value="$FileRelativePath$ +$LineNumber$" />
+      <option name="WORKING_DIRECTORY" value="$ProjectFileDir$" />
+    </exec>
+  </tool>
+</toolSet>
+
