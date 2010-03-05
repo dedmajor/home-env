@@ -6,3 +6,6 @@
 
 :map <leader>d :exe ":dict "+content.getSelection()<CR>
 :map <leader>l :exe ":lingvo "+content.getSelection()<CR>
+
+" open gvim to edit current selection content
+:map <leader>g :exe ":!gvim '+put *' "<CR>
