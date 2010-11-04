@@ -4,3 +4,4 @@ application/x-7z-compressed		7z
 application/x-httpd-php			php
 
 application/vnd.ms-excel        xls xlb xlt xlsx
+type=application/x-ica exts=ica desc="Citrix ICA"

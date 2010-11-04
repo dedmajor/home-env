@@ -25,3 +25,4 @@ application/x-rar-compressed; ~/bin/mutt_bgrun ark %s; nametemplate=%s.rar; test
 text/html; lynx -assume_charset %{charset} -display_charset UTF8 -dump %s; copiousoutput; nametemplate=%s.html
 
 text/calendar; mutt_calendar %s %{charset} | less
+application/x-ica; /home/dedmajor/ICAClient/linuxx86/wfica.sh %s; x-mozilla-flags=plugin:Citrix ICA Client
