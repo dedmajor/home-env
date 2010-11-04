@@ -1,5 +1,5 @@
-set lines=60
-set columns=180
+"set lines=60
+"set columns=180
 
 " from vimperator tips and tricks
 let g:netrw_http_cmd = "wget -q -O"

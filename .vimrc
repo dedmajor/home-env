@@ -17,7 +17,7 @@
 " app-vim/colorschemes
 " app-vim/vim-spell-en
 " app-vim/vim-spell-ru
-" media-fonts/dina
+" media-fonts/dina (media-fonts/terminus-font for cyrillic, see ~/.fonts.conf)
 
 " TODO: <++> placeholders like in latexsuite for brackets
 " printer encoding for cyrillic text
