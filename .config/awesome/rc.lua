@@ -1,3 +1,4 @@
+-- Originally from /etc/xdg/awesome/rc.lua 
 -- Standard awesome library
 require("awful")
 require("awful.autofocus")
@@ -6,7 +7,6 @@ require("awful.rules")
 require("beautiful")
 -- Notification library
 require("naughty")
-require("vicious")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
@@ -76,9 +76,6 @@ mytextclock = awful.widget.textclock({ align = "right" })
 -- Create a systray
 mysystray = widget({ type = "systray" })
 
--- Battery percentage
-mybatwidget = widget({ type = "textbox" })
-vicious.register(mybatwidget, vicious.widgets.bat, "$2%", 20, "BAT0")
 
 mybattery_widget = widget({ type = "textbox", name = "batterywidget" })
 myfan_widget = widget({ type = "textbox", name = "fanwidget" })
@@ -86,7 +83,7 @@ mytemp_widget = widget({ type = "textbox", name = "tempwidget" })
 awful.hooks.timer.register(5, function()
 	myfan_widget.text = get_fan() .. ' rpm '
 	mytemp_widget.text = get_temp() .. '° '
-	mybattery_widget.text = get_battery_percent() .. '%'
+	mybattery_widget.text = get_battery_percent() .. '% '
 end)
 
 function get_fan()
