@@ -80,6 +80,44 @@ mysystray = widget({ type = "systray" })
 mybatwidget = widget({ type = "textbox" })
 vicious.register(mybatwidget, vicious.widgets.bat, "$2%", 20, "BAT0")
 
+mybattery_widget = widget({ type = "textbox", name = "batterywidget" })
+myfan_widget = widget({ type = "textbox", name = "fanwidget" })
+mytemp_widget = widget({ type = "textbox", name = "tempwidget" })
+awful.hooks.timer.register(5, function()
+	myfan_widget.text = get_fan() .. ' rpm '
+	mytemp_widget.text = get_temp() .. '° '
+	mybattery_widget.text = get_battery_percent() .. '%'
+end)
+
+function get_fan()
+	local f = io.open('/sys/class/hwmon/hwmon0/device/fan1_input')
+	local result = f:read()
+	f:close()
+	return result
+end
+
+function get_temp()
+	local f = io.open('/sys/class/hwmon/hwmon0/device/temp1_input')
+	local result = f:read() / 1000
+	f:close()
+	return result
+end
+
+function get_battery_percent()
+	local f = io.open('/proc/acpi/battery/BAT0/info')
+	local infocontents = f:read('*all')
+	f:close()
+	local f = io.open('/proc/acpi/battery/BAT0/state')
+	local statecontents = f:read('*all')
+	f:close()
+	
+	local _, full_cap, state 
+	_, _, full_cap = string.find(infocontents, "last full capacity:%s+(%d+).*")
+	_, _, current_cap = string.find(statecontents, "remaining capacity:%s+(%d+).*")
+
+	result = math.floor(current_cap * 100 / full_cap)
+	return result
+end
 
 -- Create a wibox for each screen and add it
 mywibox = {}
@@ -151,9 +189,9 @@ for s = 1, screen.count() do
         },
         mylayoutbox[s],
         mytextclock,
-	mybatwidget,
-	myfanwidget,
-	mytempwidget,
+	mybattery_widget,
+	myfan_widget,
+	mytemp_widget,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
