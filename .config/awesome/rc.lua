@@ -6,6 +6,7 @@ require("awful.rules")
 require("beautiful")
 -- Notification library
 require("naughty")
+require("vicious")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
@@ -74,6 +75,11 @@ mytextclock = awful.widget.textclock({ align = "right" })
 
 -- Create a systray
 mysystray = widget({ type = "systray" })
+
+-- Battery percentage
+mybatwidget = widget({ type = "textbox" })
+vicious.register(mybatwidget, vicious.widgets.bat, "$2%", 20, "BAT0")
+
 
 -- Create a wibox for each screen and add it
 mywibox = {}
@@ -145,6 +151,9 @@ for s = 1, screen.count() do
         },
         mylayoutbox[s],
         mytextclock,
+	mybatwidget,
+	myfanwidget,
+	mytempwidget,
         s == 1 and mysystray or nil,
         mytasklist[s],
         layout = awful.widget.layout.horizontal.rightleft
@@ -160,8 +169,20 @@ root.buttons(awful.util.table.join(
 ))
 -- }}}
 
+awful.util.spawn("xscreensaver -no-splash")
+awful.util.spawn("~/bin/wmname LG3D")
+
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
+    awful.key({}, "XF86AudioMute", function() awful.util.spawn("amixer set Master toggle") end),
+    awful.key({}, "XF86AudioRaiseVolume", function() awful.util.spawn("amixer set Master 5%+") end),
+    awful.key({}, "XF86AudioLowerVolume", function() awful.util.spawn("amixer set Master 5%-") end),
+    awful.key({}, "XF86AudioPlay", function() awful.util.spawn("mpc toggle") end),
+    awful.key({}, "XF86AudioStop", function() awful.util.spawn("mpc stop") end),
+    awful.key({}, "XF86AudioNext", function() awful.util.spawn("mpc next") end),
+    awful.key({}, "XF86AudioPrev", function() awful.util.spawn("mpc prev") end),
+    awful.key({ modkey, "Control" }, "l", function() awful.util.spawn("xscreensaver-command --lock") end),
+
     awful.key({ modkey,           }, "Left",   awful.tag.viewprev       ),
     awful.key({ modkey,           }, "Right",  awful.tag.viewnext       ),
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
